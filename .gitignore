@@ -9,3 +9,5 @@ next-env.d.ts
 .data/
 .DS_Store
 npm-debug.log*
+.vercel
+.env*
