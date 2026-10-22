@@ -1,1 +1,486 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import "tailwindcss";
+
+/* Figma Tokens (2168:193): Primitives/Value, Semantic/Light. */
+@theme static {
+  /* Tailwind 숫자 간격을 Figma의 px 단위에 맞춥니다. */
+  --spacing: 1px;
+  --font-sans: var(--typography-font-family-base), sans-serif;
+
+  /* Primitives */
+  /* color */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-150: #e7e7e8;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-500: #a0a2a3;
+  --color-neutral-600: #66707a;
+  --color-neutral-700: #6b7280;
+  --color-neutral-800: #5e5e5e;
+  --color-neutral-900: #1f2937;
+  --color-neutral-950: #131313;
+  --color-neutral-1000: #000000;
+  --color-white-20: #ffffff33;
+  --color-blue-50: #dceafe;
+  --color-blue-300: #74aafb;
+  --color-blue-500: #297eff;
+  --color-blue-800: #1f3dbc;
+  --color-blue-900: #00378a;
+  --color-indigo-500: #536dfe;
+  --color-red-600: #d90000;
+  /* spacing */
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  /* radius */
+  --radius-0: 0px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-20: 20px;
+  --radius-full: 999px;
+  /* typography */
+  --typography-font-size-12: 12px;
+  --typography-font-size-14: 14px;
+  --typography-font-size-15: 15px;
+  --typography-font-size-16: 16px;
+  --typography-font-size-18: 18px;
+  --typography-font-size-20: 20px;
+  --typography-font-size-25: 25px;
+  --typography-font-size-26: 26px;
+  --typography-font-family-base: "Pretendard Variable";
+  --typography-font-weight-regular: 400;
+  --typography-font-weight-medium: 500;
+  --typography-font-weight-semibold: 600;
+  --typography-font-weight-bold: 700;
+  --typography-font-weight-extrabold: 800;
+  --typography-line-height-140: 140%;
+  --typography-line-height-150: 150%;
+  --typography-line-height-160: 160%;
+  --typography-letter-spacing-0: 0px;
+
+  /* Semantic */
+  /* color */
+  --color-background-default: var(--color-neutral-0);
+  --color-background-subtle: var(--color-neutral-50);
+  --color-surface-default: var(--color-neutral-0);
+  --color-surface-subtle: var(--color-neutral-100);
+  --color-surface-inverse: var(--color-neutral-900);
+  --color-text-primary: var(--color-neutral-950);
+  --color-text-strong: var(--color-neutral-1000);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-text-tertiary: var(--color-neutral-600);
+  --color-text-disabled: var(--color-neutral-500);
+  --color-text-inverse: var(--color-neutral-0);
+  --color-border-subtle: var(--color-neutral-150);
+  --color-border-default: var(--color-neutral-200);
+  --color-border-strong: var(--color-neutral-600);
+  --color-border-accent: var(--color-blue-800);
+  --color-border-on-dark: var(--color-white-20);
+  --color-action-primary: var(--color-indigo-500);
+  --color-action-secondary: var(--color-blue-500);
+  --color-action-on-primary: var(--color-neutral-0);
+  --color-info-subtle: var(--color-blue-50);
+  --color-info-soft: var(--color-blue-300);
+  --color-info-default: var(--color-blue-500);
+  --color-info-strong: var(--color-blue-900);
+  --color-feedback-error: var(--color-red-600);
+  /* spacing */
+  --spacing-page-horizontal: var(--spacing-20);
+  --spacing-section: var(--spacing-32);
+  --spacing-stack-lg: var(--spacing-24);
+  --spacing-stack-md: var(--spacing-16);
+  --spacing-stack-sm: var(--spacing-12);
+  --spacing-inline-md: var(--spacing-8);
+  --spacing-inline-sm: var(--spacing-4);
+  --spacing-control-x: var(--spacing-12);
+  --spacing-control-y: var(--spacing-8);
+  /* radius */
+  --radius-control: var(--radius-8);
+  --radius-button: var(--radius-6);
+  --radius-media: var(--radius-12);
+  --radius-card: var(--radius-20);
+  --radius-pill: var(--radius-full);
+  /* typography */
+  --typography-display-lg-font-size: var(--typography-font-size-26);
+  --typography-title-lg-font-size: var(--typography-font-size-25);
+  --typography-heading-lg-font-size: var(--typography-font-size-20);
+  --typography-heading-md-font-size: var(--typography-font-size-18);
+  --typography-body-lg-font-size: var(--typography-font-size-16);
+  --typography-body-compact-font-size: var(--typography-font-size-15);
+  --typography-body-md-font-size: var(--typography-font-size-14);
+  --typography-caption-md-font-size: var(--typography-font-size-12);
+  --typography-caption-sm-font-size: 12px;
+  --typography-label-lg-font-size: var(--typography-font-size-16);
+  --typography-label-md-font-size: var(--typography-font-size-14);
+  --typography-display-lg-font-family: var(--typography-font-family-base);
+  --typography-display-lg-font-style: var(--typography-font-weight-extrabold);
+  --typography-title-lg-font-family: var(--typography-font-family-base);
+  --typography-title-lg-font-style: var(--typography-font-weight-semibold);
+  --typography-heading-lg-font-family: var(--typography-font-family-base);
+  --typography-heading-lg-font-style: var(--typography-font-weight-bold);
+  --typography-heading-md-font-family: var(--typography-font-family-base);
+  --typography-heading-md-font-style: var(--typography-font-weight-semibold);
+  --typography-body-lg-font-family: var(--typography-font-family-base);
+  --typography-body-lg-font-style: var(--typography-font-weight-regular);
+  --typography-body-compact-font-family: var(--typography-font-family-base);
+  --typography-body-compact-font-style: var(--typography-font-weight-regular);
+  --typography-body-md-font-family: var(--typography-font-family-base);
+  --typography-body-md-font-style: var(--typography-font-weight-regular);
+  --typography-caption-md-font-family: var(--typography-font-family-base);
+  --typography-caption-md-font-style: var(--typography-font-weight-regular);
+  --typography-caption-sm-font-family: var(--typography-font-family-base);
+  --typography-caption-sm-font-style: var(--typography-font-weight-medium);
+  --typography-label-lg-font-family: var(--typography-font-family-base);
+  --typography-label-lg-font-style: var(--typography-font-weight-semibold);
+  --typography-label-md-font-family: var(--typography-font-family-base);
+  --typography-label-md-font-style: var(--typography-font-weight-medium);
+  /* color */
+  --color-action-hover-overlay: #1f3dbcb2;
+  /* radius */
+  --radius-cover: 32px;
+  --radius-none: var(--radius-0);
+  /* spacing */
+  --spacing-none: var(--spacing-0);
+  /* typography */
+  --typography-base-font-family: "Pretendard Variable";
+  --typography-shared-font-style-semibold: 600;
+  --typography-preserved-letter-spacing-pixels-1: -1px;
+  /* color */
+  --color-guide-text-preserved-1: #131313;
+  --color-component-outline-preserved-2: #9647ff;
+  /* spacing */
+  --spacing-control-compact: var(--spacing-10);
+  /* color */
+  --color-cover-gradient-preserved-3: #050510;
+  --color-cover-gradient-preserved-4: #656f79;
+  /* spacing */
+  --spacing-cover-inset: var(--spacing-80);
+  /* typography */
+  --typography-shared-font-style-medium: 500;
+  /* spacing */
+  --spacing-inline-xs: var(--spacing-2);
+  --spacing-inline-compact: var(--spacing-6);
+  /* radius */
+  --radius-component-set: 5px;
+  /* typography */
+  --typography-shared-font-style-regular: 400;
+  --typography-preserved-letter-spacing-pixels-0-1599999964237213: -0.16px;
+  /* color */
+  --color-component-outline-preserved-5: #9747ff;
+  /* spacing */
+  --spacing-section-lg: var(--spacing-40);
+  /* color */
+  --color-guide-text-preserved-6: #d90000;
+  /* spacing */
+  --spacing-cover-inset-compact: 78px;
+  /* radius */
+  --radius-scaled-media-16-799999237060547: 16.8px;
+  /* spacing */
+  --spacing-section-xl: var(--spacing-60);
+  /* radius */
+  --radius-guide-card: 24px;
+  /* typography */
+  --typography-documentation-font-family: "Inter";
+  /* color */
+  --color-guide-text-preserved-7: #6b7380;
+  --color-guide-surface-preserved-8: #e5e8ed;
+  /* spacing */
+  --spacing-guide-group: 56px;
+  --spacing-guide-inset: 64px;
+  /* typography */
+  --typography-preserved-36-font-size: 36px;
+  /* color */
+  --color-guide-text-preserved-9: #111827;
+  /* typography */
+  --typography-preserved-13-font-size: 13px;
+  /* color */
+  --color-guide-surface-preserved-10: #f6f7fa;
+  /* radius */
+  --radius-guide-panel: 16px;
+  /* typography */
+  --typography-preserved-11-font-size: 11px;
+  /* radius */
+  --radius-guide-chip: 10px;
+  /* color */
+  --color-preview-neutral-800: var(--color-neutral-800);
+  --color-guide-border-preserved-11: #e5e8ed;
+  --color-guide-text-preserved-12: #6b7380;
+  --color-guide-surface-preserved-13: #e8edff;
+  /* spacing */
+  --spacing-compact-detail: var(--spacing-5);
+  --spacing-stack-xl: var(--spacing-28);
+  --spacing-guide-section: var(--spacing-120);
+  --spacing-guide-row: 14px;
+  --spacing-preview-body-compact: 15px;
+  --spacing-preview-heading: 18px;
+  --spacing-preview-title: 25px;
+  --spacing-preview-display: 26px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Figma Text Styles: 글자 크기, 굵기, 행간을 한 클래스로 적용합니다. */
+@layer components {
+  .typography-display-lg {
+    font-family: var(--font-sans);
+    font-size: var(--typography-display-lg-font-size);
+    font-weight: var(--typography-display-lg-font-style);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-title-lg {
+    font-family: var(--font-sans);
+    font-size: var(--typography-title-lg-font-size);
+    font-weight: var(--typography-title-lg-font-style);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-heading-lg {
+    font-family: var(--font-sans);
+    font-size: var(--typography-heading-lg-font-size);
+    font-weight: var(--typography-heading-lg-font-style);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-heading-md {
+    font-family: var(--font-sans);
+    font-size: var(--typography-heading-md-font-size);
+    font-weight: var(--typography-heading-md-font-style);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-body-lg {
+    font-family: var(--font-sans);
+    font-size: var(--typography-body-lg-font-size);
+    font-weight: var(--typography-body-lg-font-style);
+    line-height: var(--typography-line-height-150);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-body-compact {
+    font-family: var(--font-sans);
+    font-size: var(--typography-body-compact-font-size);
+    font-weight: var(--typography-body-compact-font-style);
+    line-height: var(--typography-line-height-150);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  /* Figma에 Body/MD가 두 개 있습니다. 토큰 가이드와 일치하는 스타일을 기본으로 사용합니다. */
+  .typography-body-md {
+    font-family: var(--font-sans);
+    font-size: var(--typography-body-md-font-size);
+    font-weight: var(--typography-body-md-font-style);
+    line-height: var(--typography-line-height-150);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  /* 같은 이름의 기존 로컬 스타일: Pretendard Medium, 34px, 140%, -4%. */
+  .typography-body-md-34 {
+    font-family: var(--font-sans);
+    font-size: 34px;
+    font-weight: var(--typography-font-weight-medium);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: -0.04em;
+  }
+
+  .typography-caption-md {
+    font-family: var(--font-sans);
+    font-size: var(--typography-caption-md-font-size);
+    font-weight: var(--typography-caption-md-font-style);
+    line-height: var(--typography-line-height-150);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-caption-sm {
+    font-family: var(--font-sans);
+    font-size: var(--typography-caption-sm-font-size);
+    font-weight: var(--typography-caption-sm-font-style);
+    line-height: var(--typography-line-height-160);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-label-lg {
+    font-family: var(--font-sans);
+    font-size: var(--typography-label-lg-font-size);
+    font-weight: var(--typography-label-lg-font-style);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-label-md {
+    font-family: var(--font-sans);
+    font-size: var(--typography-label-md-font-size);
+    font-weight: var(--typography-label-md-font-style);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-preserved-semibold-18-1 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-18);
+    font-weight: var(--typography-font-weight-semibold);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-preserved-letter-spacing-pixels-1);
+  }
+
+  .typography-preserved-medium-14-2 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-14);
+    font-weight: var(--typography-font-weight-medium);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: -0.03em;
+  }
+
+  .typography-preserved-semibold-25-3 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-25);
+    font-weight: var(--typography-font-weight-semibold);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: -0.02em;
+  }
+
+  .typography-preserved-semibold-12-4 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-12);
+    font-weight: var(--typography-font-weight-semibold);
+    line-height: var(--typography-line-height-150);
+    letter-spacing: -0.01em;
+  }
+
+  .typography-preserved-medium-14-5 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-14);
+    font-weight: var(--typography-font-weight-medium);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: -0.02em;
+  }
+
+  .typography-preserved-regular-16-6 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-16);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: normal;
+    letter-spacing: var(--typography-preserved-letter-spacing-pixels-0-1599999964237213);
+  }
+
+  .typography-preserved-semibold-16-7 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-16);
+    font-weight: var(--typography-font-weight-semibold);
+    line-height: normal;
+    letter-spacing: var(--typography-preserved-letter-spacing-pixels-0-1599999964237213);
+  }
+
+  .typography-preserved-regular-12-8 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-12);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: normal;
+    letter-spacing: var(--typography-preserved-letter-spacing-pixels-0-1599999964237213);
+  }
+
+  .typography-preserved-regular-14-9 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-14);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-preserved-letter-spacing-pixels-1);
+  }
+
+  .typography-preserved-regular-15-10 {
+    font-family: var(--font-sans);
+    font-size: var(--typography-font-size-15);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: var(--typography-line-height-140);
+    letter-spacing: var(--typography-preserved-letter-spacing-pixels-1);
+  }
+
+  .typography-documentation-medium-12-11 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-font-size-12);
+    font-weight: var(--typography-font-weight-medium);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-documentation-regular-12-12 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-font-size-12);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-documentation-medium-36-13 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-preserved-36-font-size);
+    font-weight: var(--typography-font-weight-medium);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-documentation-regular-18-14 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-font-size-18);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-documentation-medium-18-15 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-font-size-18);
+    font-weight: var(--typography-font-weight-medium);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-documentation-regular-13-16 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-preserved-13-font-size);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+  .typography-documentation-medium-11-17 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-preserved-11-font-size);
+    font-weight: var(--typography-font-weight-medium);
+    line-height: 145%;
+    letter-spacing: 0.04em;
+  }
+
+  .typography-documentation-regular-11-18 {
+    font-family: var(--typography-documentation-font-family), sans-serif;
+    font-size: var(--typography-preserved-11-font-size);
+    font-weight: var(--typography-font-weight-regular);
+    line-height: 145%;
+    letter-spacing: var(--typography-letter-spacing-0);
+  }
+
+}
